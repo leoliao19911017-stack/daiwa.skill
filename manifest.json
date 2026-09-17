@@ -1,0 +1,47 @@
+{
+  "name": "daiwa",
+  "display_name": "带娃.skill",
+  "version": "1.1.0",
+  "description": "0-6岁育儿现场 Copilot。覆盖现场处理、发展校准、预防习惯、0-1岁照护、家庭协作、家长情绪与安全升级。",
+  "language": "zh-CN",
+  "entrypoint": "SKILL.md",
+  "scope": {
+    "age_min_months": 0,
+    "age_max_months": 72,
+    "domains": [
+      "daily_routines",
+      "eating",
+      "sleep",
+      "screen_time",
+      "tantrums",
+      "boundaries",
+      "kindergarten",
+      "social",
+      "family_alignment",
+      "safety"
+    ]
+  },
+  "knowledge": {
+    "age_stages": "knowledge/age_stages.md",
+    "principles": "knowledge/principles.md",
+    "safety": "knowledge/safety.md",
+    "scenarios_dir": "knowledge/scenarios",
+    "scripts_dir": "knowledge/scripts",
+    "development_norms": "knowledge/development_norms.md",
+    "routines": "knowledge/routines.md",
+    "caregiver_regulation": "knowledge/caregiver_regulation.md",
+    "family_alignment": "knowledge/family_alignment.md",
+    "myths": "knowledge/myths.md",
+    "safety_daily": "knowledge/safety_daily.md",
+    "medical_escalation": "knowledge/medical_escalation.md",
+    "infant_dir": "knowledge/infant"
+  },
+  "examples": [
+    "examples/toddler.jsonl",
+    "examples/preschool.jsonl",
+    "examples/school_age.jsonl"
+  ],
+  "evals": "evals/eval_cases.jsonl",
+  "dependencies": [],
+  "network_required": false
+}
