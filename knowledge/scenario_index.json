@@ -1,0 +1,325 @@
+{
+  "刷牙": [
+    "scenarios/brushing_teeth.md"
+  ],
+  "不刷牙": [
+    "scenarios/brushing_teeth.md"
+  ],
+  "穿衣": [
+    "scenarios/dressing.md"
+  ],
+  "吃饭": [
+    "scenarios/eating.md"
+  ],
+  "挑食": [
+    "scenarios/eating.md"
+  ],
+  "打人": [
+    "scenarios/hitting.md"
+  ],
+  "咬人": [
+    "scenarios/hitting.md"
+  ],
+  "被打": [
+    "scenarios/peer_aggression.md"
+  ],
+  "欺负": [
+    "scenarios/peer_aggression.md"
+  ],
+  "霸凌": [
+    "scenarios/peer_aggression.md"
+  ],
+  "幼儿园": [
+    "scenarios/kindergarten.md"
+  ],
+  "上学": [
+    "scenarios/kindergarten.md"
+  ],
+  "怕黑": [
+    "scenarios/fears_nightmares.md"
+  ],
+  "噩梦": [
+    "scenarios/fears_nightmares.md"
+  ],
+  "怪物": [
+    "scenarios/fears_nightmares.md"
+  ],
+  "撒谎": [
+    "scenarios/lying.md"
+  ],
+  "说谎": [
+    "scenarios/lying.md"
+  ],
+  "编故事": [
+    "scenarios/lying.md"
+  ],
+  "二胎": [
+    "scenarios/sibling_conflict.md"
+  ],
+  "弟弟": [
+    "scenarios/sibling_conflict.md"
+  ],
+  "妹妹": [
+    "scenarios/sibling_conflict.md"
+  ],
+  "争宠": [
+    "scenarios/sibling_conflict.md"
+  ],
+  "死亡": [
+    "scenarios/grief_death.md"
+  ],
+  "去世": [
+    "scenarios/grief_death.md"
+  ],
+  "宠物死": [
+    "scenarios/grief_death.md"
+  ],
+  "摸私处": [
+    "scenarios/body_curiosity_privacy.md"
+  ],
+  "生殖器": [
+    "scenarios/body_curiosity_privacy.md"
+  ],
+  "隐私": [
+    "scenarios/body_curiosity_privacy.md"
+  ],
+  "不会说话": [
+    "scenarios/language_development.md"
+  ],
+  "语言发育": [
+    "scenarios/language_development.md"
+  ],
+  "说话晚": [
+    "scenarios/language_development.md"
+  ],
+  "倒退": [
+    "scenarios/regression.md"
+  ],
+  "退步": [
+    "scenarios/regression.md"
+  ],
+  "出门": [
+    "scenarios/leaving_home.md"
+  ],
+  "出门拖拉": [
+    "scenarios/leaving_home.md"
+  ],
+  "穿鞋": [
+    "scenarios/leaving_home.md"
+  ],
+  "公共场合": [
+    "scenarios/public_meltdown.md"
+  ],
+  "商场哭": [
+    "scenarios/public_meltdown.md"
+  ],
+  "躺地上哭": [
+    "scenarios/public_meltdown.md"
+  ],
+  "关电视": [
+    "scenarios/screen_time.md"
+  ],
+  "电视": [
+    "scenarios/screen_time.md"
+  ],
+  "手机": [
+    "scenarios/screen_time.md"
+  ],
+  "屏幕": [
+    "scenarios/screen_time.md"
+  ],
+  "分离焦虑": [
+    "scenarios/separation_anxiety.md"
+  ],
+  "黏人": [
+    "scenarios/separation_anxiety.md"
+  ],
+  "不肯上学": [
+    "scenarios/kindergarten.md",
+    "scenarios/separation_anxiety.md"
+  ],
+  "抢玩具": [
+    "scenarios/sharing.md"
+  ],
+  "分享": [
+    "scenarios/sharing.md"
+  ],
+  "轮流": [
+    "scenarios/sharing.md"
+  ],
+  "睡觉": [
+    "scenarios/sleep.md"
+  ],
+  "不睡觉": [
+    "scenarios/sleep.md"
+  ],
+  "睡前拖延": [
+    "scenarios/sleep.md"
+  ],
+  "发脾气": [
+    "scenarios/tantrum.md"
+  ],
+  "哭闹": [
+    "scenarios/tantrum.md"
+  ],
+  "崩溃": [
+    "scenarios/tantrum.md"
+  ],
+  "如厕": [
+    "scenarios/toilet.md"
+  ],
+  "尿裤子": [
+    "scenarios/toilet.md"
+  ],
+  "戒尿不湿": [
+    "scenarios/toilet.md"
+  ],
+  "收玩具": [
+    "scenarios/toys_cleanup.md"
+  ],
+  "玩具": [
+    "scenarios/toys_cleanup.md"
+  ],
+  "共读": [
+    "fatherhood/dad_talk_reading.md"
+  ],
+  "绘本": [
+    "fatherhood/dad_talk_reading.md"
+  ],
+  "陪玩": [
+    "fatherhood/dad_play.md"
+  ],
+  "摔跤游戏": [
+    "fatherhood/dad_play.md"
+  ],
+  "内疚": [
+    "fatherhood/dad_guilt_repair.md"
+  ],
+  "加班": [
+    "fatherhood/work_family_boundary.md"
+  ],
+  "大人打架": [
+    "child_protection.md"
+  ],
+  "虐待": [
+    "child_protection.md"
+  ],
+  "体罚": [
+    "child_protection.md"
+  ],
+  "爸爸": [
+    "fatherhood/README.md"
+  ],
+  "职场爸爸": [
+    "fatherhood/working_dad_reconnection.md"
+  ],
+  "全职爸爸": [
+    "fatherhood/working_dad_reconnection.md"
+  ],
+  "下班": [
+    "fatherhood/work_family_boundary.md",
+    "fatherhood/working_dad_reconnection.md"
+  ],
+  "没时间陪": [
+    "fatherhood/working_dad_reconnection.md",
+    "fatherhood/dad_rituals.md"
+  ],
+  "孩子不要爸爸": [
+    "fatherhood/dad_guilt_repair.md",
+    "fatherhood/working_dad_reconnection.md"
+  ],
+  "接园": [
+    "fatherhood/kindergarten_dad.md"
+  ],
+  "睡前读书": [
+    "fatherhood/dad_talk_reading.md"
+  ],
+  "爷爷打": [
+    "child_protection.md"
+  ],
+  "奶奶打": [
+    "child_protection.md"
+  ],
+  "爸爸打": [
+    "child_protection.md"
+  ],
+  "妈妈打": [
+    "child_protection.md"
+  ],
+  "打红": [
+    "child_protection.md"
+  ],
+  "淤青": [
+    "child_protection.md"
+  ],
+  "衣架": [
+    "child_protection.md"
+  ],
+  "打孩子": [
+    "child_protection.md"
+  ],
+  "打儿子": [
+    "child_protection.md"
+  ],
+  "打女儿": [
+    "child_protection.md"
+  ],
+  "长记性": [
+    "child_protection.md"
+  ],
+  "看不出的惩罚": [
+    "child_protection.md"
+  ],
+  "噎住": [
+    "medical_escalation.md"
+  ],
+  "窒息": [
+    "medical_escalation.md"
+  ],
+  "布洛芬": [
+    "medical_escalation.md"
+  ],
+  "喂几毫升": [
+    "medical_escalation.md"
+  ],
+  "剂量": [
+    "medical_escalation.md"
+  ],
+  "天天吼": [
+    "caregiver_regulation.md"
+  ],
+  "吼了": [
+    "caregiver_regulation.md"
+  ],
+  "忍不住": [
+    "caregiver_regulation.md"
+  ],
+  "小气": [
+    "scenarios/sharing.md"
+  ],
+  "不让碰": [
+    "scenarios/sharing.md"
+  ],
+  "自己的东西": [
+    "scenarios/sharing.md"
+  ],
+  "出差": [
+    "fatherhood/dad_guilt_repair.md"
+  ],
+  "10分钟": [
+    "fatherhood/working_dad_reconnection.md"
+  ],
+  "陪不了": [
+    "fatherhood/working_dad_reconnection.md"
+  ],
+  "家庭群": [
+    "family_alignment.md"
+  ],
+  "统一一下": [
+    "family_alignment.md"
+  ],
+  "给手机": [
+    "scenarios/screen_time.md",
+    "family_alignment.md"
+  ]
+}

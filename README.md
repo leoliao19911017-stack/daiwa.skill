@@ -1,17 +1,27 @@
-# 带娃.skill
+# 带娃.skill v1.2.0
 
-> 让任意 Agent 安装后，成为 0-6 岁育儿现场 Copilot。
+> 让任意 Agent 安装后，成为 0-6 岁育儿现场 Copilot，**特别优化爸爸带娃与职场爸爸场景**。
 
-带娃.skill 优先回答三个问题：**现在怎么做、下一句话怎么说、如果还不配合怎么办**。不是育儿百科，而是家长在现场可以直接照着做的行动指南。
+安装到 Agent 后，优先回答：
+- 现在怎么做？
+- 下一句话怎么说？
+- 如果还不配合怎么办？
 
-## 它解决什么问题
+不是育儿百科，而是家长在现场可以直接照着做的行动指南。
 
 | 常见提问 | 普通百科回答 | 带娃.skill 回答 |
 |---|---|---|
 | 孩子不肯刷牙 | 讲刷牙的重要性 | 3 个当下动作 + 1 句可直接说的话 + 不配合时的下一步 |
 | 每天早晨都在催 | 讲时间管理理论 | 固定流程 + 视觉清单 + 7 天改善方案 |
-| 关电视就哭 | 讲屏幕时间的危害 | 先判断（切换问题/情绪问题）→ 现场处理 → 预防方案 |
-| 我快要吼了 | 讲情绪管理 | 先给家长降级动作，再处理孩子 |
+| 我下班回家孩子只要妈妈 | 讲父亲角色重要性 | 阶段性偏好判断 + 不强迫亲近 + 固定照护锚点方案 |
+
+## v1.2 新增
+- **Dad Mode**：全职爸爸回归职场、下班重连、有限时间连接、幼儿园参与、爸爸内疚与修复（`knowledge/fatherhood/`）
+- **儿童保护优先级**：第三方体罚/虐待/性安全风险最高优先路由（`knowledge/child_protection.md`）
+- 新增 8 个高频场景：说谎、怕黑/噩梦、二胎同胞、被欺负、死亡悲伤、身体隐私、语言担忧、能力倒退
+- 场景中文索引（`knowledge/scenario_index.json`）、家庭执行卡 schema
+- 超龄策略（>6 岁）、证据分级（A 研究 / B 机构 / C 实践框架）
+- 语义 rubric 评测 + 压力测试（含恶意请求、中英混合），`tools/validate.py` + GitHub Action
 
 ## 安装
 
@@ -31,58 +41,33 @@ New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\skills" | Out-Null
 Copy-Item -Recurse -Force daiwa.skill "$env:USERPROFILE\.claude\skills\daiwa"
 ```
 
-重启会话后即可生效。技能触发词：带娃、育儿、孩子哭闹、不肯吃饭、不肯睡觉、怎么跟孩子说 等。
-
-### 其他 Agent
-
-任意支持「技能/知识包」的 Agent，把 `SKILL.md` 设为入口（entrypoint），按需加载 `knowledge/` 下的知识文件即可，零依赖、无需联网。
+重启会话后生效。触发词：带娃、育儿、孩子哭闹、不肯吃饭、不肯睡觉、怎么跟孩子说、爸爸带娃 等。
 
 ## 目录结构
 
 ```
 daiwa.skill/
-├── SKILL.md              # 入口：角色、决策链、默认输出格式、行为准则
+├── SKILL.md              # 入口：角色、风险优先级、Dad Mode、决策链、输出格式
 ├── manifest.json         # 技能清单与知识索引
-├── CHANGELOG.md          # 版本记录
-├── knowledge/            # 知识库
-│   ├── age_stages.md         # 0-6 岁年龄能力校准
-│   ├── development_norms.md  # 「这正常吗」发展参照
-│   ├── principles.md         # 通用处理原则
-│   ├── routines.md           # 固定流程与预防冲突
-│   ├── scenarios/            # 14 个高频场景（吃饭、睡觉、刷牙、如厕、打人、公共场合哭闹…）
-│   ├── scripts/              # 现场话术（边界、选择、情绪、鼓励）
-│   ├── infant/               # 0-1 岁专项（喂养、安抚、睡眠、游戏、分离）
-│   ├── caregiver_regulation.md # 家长情绪降级
-│   ├── family_alignment.md   # 多人照护统一口径
-│   ├── myths.md              # 常见育儿误区
-│   ├── safety_daily.md       # 日常安全预防
-│   ├── medical_escalation.md # 医疗/急救升级
-│   └── safety.md             # 安全风险升级处理
-├── examples/             # 输出风格示例（toddler / preschool / school_age）
-└── evals/                # 评测用例（eval_cases.jsonl）
+├── knowledge/
+│   ├── scenario_index.json   # 中文关键词 → 场景文件路由
+│   ├── child_protection.md   # 儿童保护（最高优先级）
+│   ├── age_stages.md / development_norms.md / development_red_flags.md
+│   ├── scenarios/            # 22 个高频场景
+│   ├── fatherhood/           # 爸爸模块（7 个文件）
+│   ├── scripts/              # 现场话术（边界/选择/情绪/鼓励/合作）
+│   ├── infant/               # 0-1 岁专项
+│   └── …                     # routines / myths / family_alignment / safety 等
+├── references/           # 证据分级地图 + 书单/博客来源
+├── examples/             # 输出风格示例（含 dad_mode）
+├── evals/                # 语义 rubric 评测用例
+└── tools/validate.py     # 结构校验
 ```
-
-## 核心决策链
-
-```
-安全风险 → 年龄阶段 → 生理/情绪状态 → 具体场景 → 行为功能
-→ 家长目标 → 最小可执行动作 → 现场话术 → 下一层处理 → 长期改善
-```
-
-## 设计原则
-
-- **先看年龄，再看状态，再看行为** —— 不脱离发展阶段谈对错
-- **接纳情绪，但边界不因哭闹自动改变**
-- **不贴标签** —— 不把孩子称为懒、坏、熊、故意作对
-- **可执行优先** —— 每个回答都有能直接说出口的话
-- **不说教** —— 一次只给 1-3 个可持续方法
-- **安全兜底** —— 医疗/急救情境自动升级处理
-
-## 适用范围
-
-- 0-6 岁（0-72 个月）
-- 覆盖：日常流程、吃饭、睡觉、屏幕时间、哭闹、边界、幼儿园、社交、家庭协作、安全
 
 ## License
 
-[MIT](LICENSE)
+MIT
+
+## Evidence
+
+见 `references/evidence_map.md`（研究/机构/实践框架分级）与 `references/books_and_blogs.md`（书单与博客来源）。

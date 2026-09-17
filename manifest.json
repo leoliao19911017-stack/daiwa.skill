@@ -1,24 +1,34 @@
 {
   "name": "daiwa",
   "display_name": "带娃.skill",
-  "version": "1.1.0",
-  "description": "0-6岁育儿现场 Copilot。覆盖现场处理、发展校准、预防习惯、0-1岁照护、家庭协作、家长情绪与安全升级。",
+  "version": "1.2.0",
+  "description": "0-6岁育儿现场 Copilot，特别优化爸爸带娃、职场爸爸有限时间连接、幼儿园阶段、多人照护，并强化儿童保护与高频场景覆盖。",
   "language": "zh-CN",
   "entrypoint": "SKILL.md",
   "scope": {
     "age_min_months": 0,
     "age_max_months": 72,
     "domains": [
+      "body_privacy",
+      "boundaries",
+      "child_protection",
       "daily_routines",
       "eating",
-      "sleep",
-      "screen_time",
-      "tantrums",
-      "boundaries",
-      "kindergarten",
-      "social",
       "family_alignment",
-      "safety"
+      "fatherhood",
+      "grief",
+      "kindergarten",
+      "language_development",
+      "peer_aggression",
+      "play",
+      "reconnection",
+      "safety",
+      "screen_time",
+      "shared_reading",
+      "sleep",
+      "social",
+      "tantrums",
+      "working_dad"
     ]
   },
   "knowledge": {
@@ -34,14 +44,25 @@
     "myths": "knowledge/myths.md",
     "safety_daily": "knowledge/safety_daily.md",
     "medical_escalation": "knowledge/medical_escalation.md",
-    "infant_dir": "knowledge/infant"
+    "infant_dir": "knowledge/infant",
+    "fatherhood_dir": "knowledge/fatherhood",
+    "child_protection": "knowledge/child_protection.md",
+    "scenario_index": "knowledge/scenario_index.json",
+    "family_card_schema": "knowledge/family_card_schema.json",
+    "development_red_flags": "knowledge/development_red_flags.md"
   },
   "examples": [
     "examples/toddler.jsonl",
     "examples/preschool.jsonl",
-    "examples/school_age.jsonl"
+    "examples/age_5_6.jsonl",
+    "examples/dad_mode.jsonl"
   ],
   "evals": "evals/eval_cases.jsonl",
   "dependencies": [],
-  "network_required": false
+  "network_required": false,
+  "license": "MIT",
+  "references": {
+    "evidence_map": "references/evidence_map.md",
+    "books_and_blogs": "references/books_and_blogs.md"
+  }
 }
